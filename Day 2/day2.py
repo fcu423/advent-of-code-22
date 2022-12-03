@@ -1,6 +1,3 @@
-# 0 = Loose
-# 1 = Draw
-# 2 = Win
 decisionDictionary = {
     "A X": "A Z",
     "A Y": "A X",
