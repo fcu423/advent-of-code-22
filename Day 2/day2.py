@@ -28,21 +28,17 @@ scoreDictionary = {
 
 file1 = open('input.txt', 'r')
 lines = file1.readlines()
-score = 0
+scorePlan1 = 0
+scoreRealPlan = 0
 
-# Strategy 1
 for line in lines:
     line = line.strip()
-    score += scoreDictionary[line]
-
-print(f'Score according to plan: {score}')
-
-score = 0
-
-# Strategy 2 - Fixed
-for line in lines:
-    line = line.strip()
+    # Strategy 1
+    scorePlan1 += scoreDictionary[line]
+    # Strategy 2 - Fixed
     gameToPlay = decisionDictionary[line]
-    score += scoreDictionary[gameToPlay]
+    scoreRealPlan += scoreDictionary[gameToPlay]
 
-print(f'Score according to the real plan: {score}')
+print(f'Score according to plan: {scorePlan1}')
+
+print(f'Score according to the real plan: {scoreRealPlan}')
