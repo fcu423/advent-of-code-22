@@ -3,7 +3,6 @@ lines = file1.readlines()
 rangesDuplicatedCount = 0
 rangesAnyOverlap = 0
 
-# Priority of misplaced items
 for line in lines:
     ranges = line.split(",")
     range1 = ranges[0].split("-")
